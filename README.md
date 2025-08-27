@@ -1,6 +1,6 @@
 # Git Version Control System
 
-![Git Logo](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png)
+<img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" alt="Git Logo" width="200">
 
 A simple guide to Git - the world's most popular version control system.
 
