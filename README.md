@@ -41,6 +41,50 @@ git push origin main
 git pull origin main
 ```
 
+## Working with Tags
+
+### List Tags
+```bash
+# List all tags
+git tag
+
+# List tags with pattern
+git tag -l "v1.*"
+
+# Show tag details
+git show <tag-name>
+```
+
+### Create Tags
+```bash
+# Create lightweight tag
+git tag v1.0
+
+# Create annotated tag with message
+git tag -a v1.0 -m "Version 1.0 release"
+```
+
+### Delete Tags
+```bash
+# Delete tag locally
+git tag -d <tag-name>
+
+# Delete tag remotely
+git push origin --delete <tag-name>
+
+# Alternative way to delete remote tag
+git push origin :refs/tags/<tag-name>
+```
+
+### Push Tags
+```bash
+# Push specific tag
+git push origin <tag-name>
+
+# Push all tags
+git push origin --tags
+```
+
 ## Why Use Git?
 
 - **Track Changes**: Keep history of all file modifications
