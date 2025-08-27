@@ -1,0 +1,9 @@
+
+git checkout master
+git merge dev
+git merge test
+git push origin master
+
+
+git branch -d dev test
+git push origin --delete dev test
