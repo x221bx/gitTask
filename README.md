@@ -85,6 +85,53 @@ git push origin <tag-name>
 git push origin --tags
 ```
 
+## Branch Operations
+
+### Create and Switch Branches
+```bash
+# Create new branch
+git branch <branch-name>
+
+# Switch to branch
+git checkout <branch-name>
+
+# Create and switch in one command
+git checkout -b <branch-name>
+
+# Switch using newer syntax
+git switch <branch-name>
+
+# Create and switch using newer syntax
+git switch -c <branch-name>
+```
+
+### Merge Branches
+```bash
+# Switch to target branch (usually main)
+git checkout main
+
+# Merge feature branch into current branch
+git merge <feature-branch>
+
+# Merge with no fast-forward (creates merge commit)
+git merge --no-ff <feature-branch>
+
+# Merge with message
+git merge <feature-branch> -m "Merge feature xyz"
+```
+
+### Delete Branches
+```bash
+# Delete branch locally (after merge)
+git branch -d <branch-name>
+
+# Force delete branch locally
+git branch -D <branch-name>
+
+# Delete remote branch
+git push origin --delete <branch-name>
+```
+
 ## Why Use Git?
 
 - **Track Changes**: Keep history of all file modifications
